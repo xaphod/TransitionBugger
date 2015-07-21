@@ -88,8 +88,6 @@
     toViewController.view.frame = endFrame;
 }
 
-#pragma mark - UIPercentDrivenInteractiveTransition Overridden Methods
-
 - (void)updateInteractiveTransition:(CGFloat)percentComplete {
     NSLog(@"%s", __PRETTY_FUNCTION__);
     id<UIViewControllerContextTransitioning> transitionContext = self.transitionContext;
@@ -135,7 +133,6 @@
             [transitionContext completeTransition:YES];
         }];
     }
-    
 }
 
 - (void)cancelInteractiveTransition {

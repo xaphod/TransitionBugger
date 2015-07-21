@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface InteractiveAnimator : UIPercentDrivenInteractiveTransition <UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate, UIViewControllerInteractiveTransitioning>
+@interface InteractiveAnimator : NSObject <UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate, UIViewControllerInteractiveTransitioning>
 
 @property (nonatomic, strong) id<UIViewControllerContextTransitioning> transitionContext;
 
 @property (nonatomic, assign) bool isPush;
+
+
+-(void)startInteractiveTransition:(id<UIViewControllerContextTransitioning>)transitionContext;
+- (void)updateInteractiveTransition:(CGFloat)percentComplete;
+- (void)finishInteractiveTransition;
+- (void)cancelInteractiveTransition;
 
 @end
