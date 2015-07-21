@@ -121,6 +121,7 @@
             toViewController.view.frame = endFrame;
         } completion:^(BOOL finished) {
             NSLog(@"%s - completeTransition:YES", __PRETTY_FUNCTION__);
+            [fromViewController.view removeFromSuperview];
             [transitionContext completeTransition:YES];
         }];
     } else {
@@ -130,6 +131,7 @@
             fromViewController.view.frame = endFrame;
         } completion:^(BOOL finished) {
             NSLog(@"%s - completeTransition:YES", __PRETTY_FUNCTION__);
+            [fromViewController.view removeFromSuperview];
             [transitionContext completeTransition:YES];
         }];
     }

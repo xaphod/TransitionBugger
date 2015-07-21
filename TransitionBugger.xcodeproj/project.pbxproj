@@ -17,16 +17,6 @@
 		22AF84FF1B57AF9A006CAB1C /* InteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF84FE1B57AF9A006CAB1C /* InteractiveAnimator.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		22AF84EE1B5799E8006CAB1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22AF84CC1B5799E8006CAB1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22AF84D31B5799E8006CAB1C;
-			remoteInfo = TransitionBugger;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		228D65BF1B5E3DA80093CC7F /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		228D65C01B5E3DA80093CC7F /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
@@ -40,20 +30,12 @@
 		22AF84E21B5799E8006CAB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22AF84E41B5799E8006CAB1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22AF84E71B5799E8006CAB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		22AF84ED1B5799E8006CAB1C /* TransitionBuggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionBuggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AF84FD1B57AF9A006CAB1C /* InteractiveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveAnimator.h; sourceTree = "<group>"; };
 		22AF84FE1B57AF9A006CAB1C /* InteractiveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		22AF84D11B5799E8006CAB1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22AF84EA1B5799E8006CAB1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				22AF84D41B5799E8006CAB1C /* TransitionBugger.app */,
-				22AF84ED1B5799E8006CAB1C /* TransitionBuggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,24 +109,6 @@
 			productReference = 22AF84D41B5799E8006CAB1C /* TransitionBugger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22AF84EC1B5799E8006CAB1C /* TransitionBuggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22AF84FA1B5799E8006CAB1C /* Build configuration list for PBXNativeTarget "TransitionBuggerTests" */;
-			buildPhases = (
-				22AF84E91B5799E8006CAB1C /* Sources */,
-				22AF84EA1B5799E8006CAB1C /* Frameworks */,
-				22AF84EB1B5799E8006CAB1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22AF84EF1B5799E8006CAB1C /* PBXTargetDependency */,
-			);
-			name = TransitionBuggerTests;
-			productName = TransitionBuggerTests;
-			productReference = 22AF84ED1B5799E8006CAB1C /* TransitionBuggerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,10 +120,6 @@
 				TargetAttributes = {
 					22AF84D31B5799E8006CAB1C = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					22AF84EC1B5799E8006CAB1C = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 22AF84D31B5799E8006CAB1C;
 					};
 				};
 			};
@@ -178,7 +137,6 @@
 			projectRoot = "";
 			targets = (
 				22AF84D31B5799E8006CAB1C /* TransitionBugger */,
-				22AF84EC1B5799E8006CAB1C /* TransitionBuggerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,13 +149,6 @@
 				22AF84E31B5799E8006CAB1C /* Main.storyboard in Resources */,
 				22AF84E81B5799E8006CAB1C /* LaunchScreen.xib in Resources */,
 				22AF84E51B5799E8006CAB1C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22AF84EB1B5799E8006CAB1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,22 +167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22AF84E91B5799E8006CAB1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22AF84EF1B5799E8006CAB1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22AF84D31B5799E8006CAB1C /* TransitionBugger */;
-			targetProxy = 22AF84EE1B5799E8006CAB1C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22AF84E11B5799E8006CAB1C /* Main.storyboard */ = {
@@ -355,40 +291,6 @@
 			};
 			name = Release;
 		};
-		22AF84FB1B5799E8006CAB1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TransitionBuggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitionBugger.app/TransitionBugger";
-			};
-			name = Debug;
-		};
-		22AF84FC1B5799E8006CAB1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TransitionBuggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitionBugger.app/TransitionBugger";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,15 +308,6 @@
 			buildConfigurations = (
 				22AF84F81B5799E8006CAB1C /* Debug */,
 				22AF84F91B5799E8006CAB1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22AF84FA1B5799E8006CAB1C /* Build configuration list for PBXNativeTarget "TransitionBuggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22AF84FB1B5799E8006CAB1C /* Debug */,
-				22AF84FC1B5799E8006CAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
